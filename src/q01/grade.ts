@@ -1,7 +1,7 @@
 const inputGrade = process.argv[2];
 const grade = Number(inputGrade);
 
-if (isNaN(grade) || grade > 100 || grade < 0) {
+if (isNaN(grade) || grade > 100 || grade < 0 || !Number.isInteger(grade)) {
     console.log("Invalid Input");
     process.exit(1);
 } else if (grade >= 80) {
